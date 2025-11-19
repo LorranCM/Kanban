@@ -6,12 +6,11 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import com.example.kanban.R
-import com.example.kanban.databinding.FragmentRegisterBinding
+import com.example.kanban.databinding.FragmentRecoverAccountBinding
 
+class RecoverAccountFragment : Fragment() {
 
-class RegisterFragment : Fragment() {
-
-    private var _binding: FragmentRegisterBinding? = null
+    private var _binding: FragmentRecoverAccountBinding? = null
     private val binding get() = _binding!!
 
     override fun onCreateView(
@@ -19,7 +18,7 @@ class RegisterFragment : Fragment() {
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View {
-        _binding = FragmentRegisterBinding.inflate(inflater, container, false)
+        _binding = FragmentRecoverAccountBinding.inflate(inflater, container, false)
         return binding.root
     }
 
