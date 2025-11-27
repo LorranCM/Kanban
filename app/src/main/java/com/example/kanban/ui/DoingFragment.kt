@@ -1,4 +1,4 @@
-package com.example.kanban.ui.auth
+package com.example.kanban.ui
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
@@ -6,18 +6,19 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import com.example.kanban.R
-import com.example.kanban.databinding.FragmentRecoverAccountBinding
+import com.example.kanban.databinding.FragmentHomeBinding
 
-class RecoverAccountFragment : Fragment() {
+class DoingFragment : Fragment() {
 
-    private var _binding: FragmentRecoverAccountBinding? = null
+    private var _binding: FragmentHomeBinding? = null
     private val binding get() = _binding!!
 
     override fun onCreateView(
-        inflater: LayoutInflater, container: ViewGroup?,
+        inflater: LayoutInflater,
+        container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View {
-        _binding = FragmentRecoverAccountBinding.inflate(inflater, container, false)
+        _binding = FragmentHomeBinding.inflate(inflater, container, false)
         return binding.root
     }
 
@@ -25,4 +26,5 @@ class RecoverAccountFragment : Fragment() {
         super.onDestroyView()
         _binding = null
     }
+
 }
