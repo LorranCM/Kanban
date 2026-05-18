@@ -9,6 +9,7 @@ import android.widget.Toast
 import com.example.kanban.R
 import com.example.kanban.databinding.FragmentRecoverAccountBinding
 import com.example.kanban.util.initToolbar
+import com.example.kanban.util.showBottomSheet
 
 class RecoverAccountFragment : Fragment() {
 
@@ -46,7 +47,7 @@ class RecoverAccountFragment : Fragment() {
         if (email.isNotBlank()) {
             Toast.makeText(requireContext(), "Tudo OK!", Toast.LENGTH_SHORT).show()
         } else {
-            Toast.makeText(requireContext(), "Preencha um email Válido", Toast.LENGTH_SHORT).show()
+            showBottomSheet(message = R.string.email_empty)
         }
     }
 }
